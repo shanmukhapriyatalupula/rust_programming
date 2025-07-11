@@ -1,0 +1,14 @@
+fn main() {
+    let some_number = Some(7);
+    let no_number: Option<i32> = None;
+    if let Some(value) = some_number {
+        println!("We got a number: {}", value);
+    } else {
+        println!("No number found");
+    }
+    if let Some(value) = no_number {
+        println!("We got a number: {}", value);
+    } else {
+        println!("No number found");
+    }
+}
