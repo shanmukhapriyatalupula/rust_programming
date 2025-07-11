@@ -1,0 +1,13 @@
+fn main() {
+    let mut count = 0;
+    let mut num = 0;
+    loop {
+        if num >= 15 {
+            break;
+        }
+        num += 1;
+        count += 1;
+        println!("Iteration: {}, num = {}", count, num);
+    }
+    println!("Total iterations until num reached 15: {}", count);
+}
