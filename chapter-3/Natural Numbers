@@ -1,0 +1,11 @@
+fn main() {
+    let mut num = 1;
+
+    loop {
+        if num > 10 {
+            break;
+        }
+        println!("{}", num);
+        num += 1;
+    }
+}
