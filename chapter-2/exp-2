@@ -1,0 +1,14 @@
+fn main() {
+    let x = 10;  
+    let y = &x;
+    println!("Value of x: {}", x);
+    println!("Reference y points to: {}", y);
+    println!("Dereferenced y: {}", *y);
+    let mut z = 20;
+    {
+        let z_ref = &mut z;
+        *z_ref += 5; 
+        println!("Modified through mutable reference: {}", *z_ref);
+    }
+    println!("Value of z after modification: {}", z);
+}
