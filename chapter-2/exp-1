@@ -1,0 +1,13 @@
+fn main() {
+    let x: i32 = 100;
+    let y: f64 = x as f64;  // Cast i32 to f64
+
+    let a: u8 = 255;
+    let b: i16 = a as i16;  // Cast u8 to i16
+
+    println!("Integer x = {}", x);
+    println!("Casted to float y = {}", y);
+
+    println!("Unsigned 8-bit a = {}", a);
+    println!("Casted to signed 16-bit b = {}", b);
+}
