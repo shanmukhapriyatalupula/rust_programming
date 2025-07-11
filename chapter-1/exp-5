@@ -1,0 +1,10 @@
+fn main() {
+    let a = 42;
+    let b = 3.14;
+    let c = "Rust";
+    let x: i32 = 100;
+    let y: f32 = 2.5;
+    let z: &str = "Programming";
+    println!("Implicit: a = {}, b = {}, c = {}", a, b, c);
+    println!("Explicit: x = {}, y = {}, z = {}", x, y, z);
+}

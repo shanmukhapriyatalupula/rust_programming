@@ -1,0 +1,13 @@
+fn main() {
+    let x = 5;
+    println!("Outside block, x = {}", x);
+
+    {
+        let x = x + 10;
+        println!("Inside block, shadowed x = {}", x);
+        let y = 100;
+        println!("Inside block, y = {}", y);
+    }
+    println!("Back outside block, x = {}", x);
+    // println!("y = {}", y);
+}

@@ -1,0 +1,10 @@
+const MAX_USERS: u32 = 1000;     
+const PI: f64 = 3.14159;        
+const IS_ENABLED: bool = true;       
+const APP_NAME: &str = "MyRustApp"; 
+fn main() {
+    println!("Application Name: {}", APP_NAME);
+    println!("Max Users: {}", MAX_USERS);
+    println!("PI Value: {}", PI);
+    println!("Is Feature Enabled? {}", IS_ENABLED);
+}

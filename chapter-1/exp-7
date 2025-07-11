@@ -1,0 +1,9 @@
+fn main() {
+    let person: (i32, f64, &str) = (25, 72.5, "Alice");
+    let age = person.0;
+    let weight = person.1;
+    let name = person.2;
+    println!("Name: {}", name);
+    println!("Age: {}", age);
+    println!("Weight: {} kg", weight);
+}

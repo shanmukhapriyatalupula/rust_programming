@@ -1,0 +1,10 @@
+fn main() {
+    let implicit_int = 10; 
+    let implicit_float = 3.5;     
+    let implicit_str = "Hello";
+    let explicit_int: i32 = 20;
+    let explicit_float: f32 = 7.25;
+    let explicit_str: &str = "Rust";
+    println!("Implicit types: int = {}, float = {}, str = {}", implicit_int, implicit_float, implicit_str);
+    println!("Explicit types: int = {}, float = {}, str = {}", explicit_int, explicit_float, explicit_str);
+}

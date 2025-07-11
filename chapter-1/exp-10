@@ -1,0 +1,6 @@
+fn main() {
+    let name = String::from("Rust Programming");
+    let course = "Systems Programming".to_string();
+    println!("Name: {}", name);
+    println!("Course: {}", course);
+}
