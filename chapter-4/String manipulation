@@ -1,0 +1,7 @@
+const str = "   Hello, World!   ";
+console.log("Length (capacity equivalent):", str.length);
+console.log("Contains 'World':", str.includes("World"));
+const replacedStr = str.replace("World", "JavaScript");
+console.log("Replace 'World' with 'JavaScript':", replacedStr);
+const trimmedStr = str.trim();
+console.log("Trimmed string:", trimmedStr);
