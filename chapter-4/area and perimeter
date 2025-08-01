@@ -1,0 +1,6 @@
+def calculate_area_perimeter(x, y):
+    area = x * y
+    perimeter = 2 * (x + y)
+    return (area, perimeter)
+result = calculate_area_perimeter(5, 3)
+print(f"Area: {result[0]}, Perimeter: {result[1]}")
