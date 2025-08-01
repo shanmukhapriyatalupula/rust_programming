@@ -1,0 +1,16 @@
+test_divisibility_by_3_4 <- function(num) {
+  divisible_by_3 <- (num %% 3 == 0)
+  divisible_by_4 <- (num %% 4 == 0)
+  if (divisible_by_3 && divisible_by_4) {
+    return(0)     
+  } else if (divisible_by_3) {
+    return(1)
+  } else if (divisible_by_4) {
+    return(2)  
+  } else {
+    return(-1)   
+  }
+}
+num <- as.integer(readline(prompt = "Enter an integer: "))
+result <- test_divisibility_by_3_4(num)
+cat("Result:", result, "\n")
