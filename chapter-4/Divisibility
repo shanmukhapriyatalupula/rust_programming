@@ -1,16 +1,28 @@
-test_divisibility_by_3_4 <- function(num) {
-  divisible_by_3 <- (num %% 3 == 0)
-  divisible_by_4 <- (num %% 4 == 0)
-  if (divisible_by_3 && divisible_by_4) {
-    return(0)     
-  } else if (divisible_by_3) {
-    return(1)
-  } else if (divisible_by_4) {
-    return(2)  
-  } else {
-    return(-1)   
-  }
+fn test_divisibility_by_3_4(num: i32) -> i32 {
+    let divisible_by_3 = num % 3 == 0;
+    let divisible_by_4 = num % 4 == 0;
+
+    if divisible_by_3 && divisible_by_4 {
+        0  // divisible by both 3 and 4
+    } else if divisible_by_3 {
+        1  // divisible by 3 only
+    } else if divisible_by_4 {
+        2  // divisible by 4 only
+    } else {
+        -1 // not divisible by 3 or 4
+    }
 }
-num <- as.integer(readline(prompt = "Enter an integer: "))
-result <- test_divisibility_by_3_4(num)
-cat("Result:", result, "\n")
+
+fn main() {
+    use std::io;
+
+    println!("Enter an integer:");
+
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Failed to read input");
+
+    let num: i32 = input.trim().parse().expect("Please enter a valid integer");
+
+    let result = test_divisibility_by_3_4(num);
+    println!("Result: {}", result);
+}
